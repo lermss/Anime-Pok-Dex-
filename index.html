@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Anime PokéDex</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link href="https://fonts.googleapis.com/css2?family=Poppins&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<audio id="pokeSound" src="sounds/pokemon.mp3"></audio>
+<audio id="battleSound" src="sounds/pokemon-battle.mp3" loop></audio>
+
+<header>
+  <h1> ⚡Anime PokéDex</h1>
+  <h2 id="welcome"></h2>
+  <button onclick="logout()">Logout</button>
+</header>
+
+<div class="search-box">
+  <input type="text" id="pokemonName" placeholder="Search Pokémon...">
+  <button onclick="getPokemon()">Search</button>
+</div>
+<select id="generation" onchange="loadByGeneration()">
+  <option value="">🌍 All Generations</option>
+  <option value="1">Gen 1</option>
+  <option value="2">Gen 2</option>
+  <option value="3">Gen 3</option>
+  <option value="4">Gen 4</option>
+  <option value="5">Gen 5</option>
+  <option value="6">Gen 6</option>
+  <option value="7">Gen 7</option>
+  <option value="8">Gen 8</option>
+  <option value="9">Gen 9</option>
+</select>
+<div class="type-filters">
+  <button onclick="filterType('fire')">🔥 Fire</button>
+  <button onclick="filterType('water')">💧 Water</button>
+  <button onclick="filterType('grass')">🌿 Grass</button>
+  <button onclick="filterType('electric')">⚡ Electric</button>
+  <button onclick="filterType('psychic')">🧠 Psychic</button>
+  <button onclick="filterType('dark')">🌑 Dark</button>
+  <button onclick="filterType('dragon')">🐉 Dragon</button>
+</div>
+
+<div class="main-content">
+  <div class="list-container">
+    <h3>📜 Pokémon List</h3>
+    <ul id="pokemonList"></ul>
+    <div class="pagination">
+    <button onclick="prevPage()">⬅ Prev</button>
+    <button onclick="nextPage()">Next ➡</button>
+  </div>
+  </div>
+
+  <div class="pokemon-container" id="pokemonCard"></div>
+</div>
+
+<h3>💖 Favorite Pokémon</h3>
+<div id="favorites" ><a href="favorites.html">💖 View Favorites</a></div>
+
+
+
+<script src="script.js"></script>
+</body>
+<footer>
+  <p>Powered by <a href="https://pokeapi.co/" target="_blank">PokeAPI</a> | Created with ❤️ for anime fans</p>
+</footer>
+</html>
