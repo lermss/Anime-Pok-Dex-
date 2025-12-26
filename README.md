@@ -95,7 +95,7 @@ anime-pokedex/
 
 Lerma Magno
 Pangasinan State University – IT Student
-🔗 GitHub: https://github.com/lermss/Anime-Poké-Dex- 
+🔗 GitHub: https://github.com/lermss/Anime-Pok-Dex-
 ---
 
 ## 📄 License
@@ -106,3 +106,4 @@ All Pokémon data belongs to Nintendo / Game Freak.
 ---
 
 ⭐ If you enjoyed this project, feel free to star the repository!
+
